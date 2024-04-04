@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.titulo {
+    border-radius: 8px;
+    background: #002b25;
+    padding: 20px 40px;
+    margin: 3% 35%;
+    border: solid 1px #008975;
+    font-family: Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.titulo:hover {
+    background: #008975;
+    transition: 2s ease-in-out;
+}
