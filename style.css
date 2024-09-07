@@ -1,67 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.titulo {
-    border-radius: 8px;
-    background: #002b25;
-    padding: 20px 40px;
-    margin: 3% 35%;
-    border: solid 1px #008975;
-    font-family: "Rubik Vinyl", system-ui;
+body {
+    background-color: #f4f7f6;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+
+.titulo {
+    background: linear-gradient(135deg, #008975, #003e89);
+    padding: 20px 40px;
+    margin-bottom: 50px;
+    border-radius: 12px;
+    font-family: "Rubik Vinyl", sans-serif;
+    font-size: 2rem;
     color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: background 0.5s ease-in-out;
 }
 
 .titulo:hover {
-    background: #003e89;
-    transition: 2s ease-in-out;
+    background: linear-gradient(135deg, #003e89, #008975);
 }
 
 .todo {
     display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .btn {
+    background-color: #008975;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
     padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #006d61;
 }
 
 .number {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: #f4f7f6;
+    border-radius: 8px;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .select-number {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 38px;
+    gap: 50px;
 }
 
 .multiplicar {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-top: 35px;
     align-items: center;
+}
+
+#multiplicador {
+    background-color: #003e89;
+    color: white;
+    font-size: 1.25rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#multiplicador:hover {
+    background-color: #002b75;
 }
 
 .tabuada {
     list-style: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    padding: 0;
     font-size: 1.5rem;
 }
 
-#multiplicador {
-    padding: 10px 20px;
+.tabuada li {
+    margin: 5px 0;
+    font-size: 1.25rem;
+    color: #333;
 }
